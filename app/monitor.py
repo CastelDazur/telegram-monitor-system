@@ -1,13 +1,14 @@
 from telethon import TelegramClient, events
-from config.settings import API_ID, API_HASH, SESSION_NAME, KEYWORDS
+from config.settings import API_ID, API_HASH, SESSION_NAME, KEYWORDS, TARGET_CHANNEL_IDS
+from app.router import route_message
 
 client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
 
 @client.on(events.NewMessage)
 async def handler(event):
-    message = event.message.message.lower()
-    if any(keyword.lower() in message for keyword in KEYWORDS):
-        print(f"[MATCH] {event.chat.title}: {message}")
+    text = event.message.message.lower()
+    if any(keyword.lower() in text for keyword in KEYWORDS):
+        await route_message(event)
 
 def run():
     print("Starting Telegram Monitor...")
