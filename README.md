@@ -40,9 +40,6 @@
 - **Платформа:** Python 3.11+ • Telethon • Heroku-ready
 - **Лицензия:** MIT
 - **Статус:** Active development
-
-> Под реальный релиз можно добавить графические бейджи (Shields) и логотип в docs/banner.png, если требуется.
-
 ---
 
 ## Ключевые возможности
@@ -135,12 +132,12 @@ Router (куда отправить совпадения)
 
 > Все переменные читаются из .env через python-dotenv и доступны в config/settings.py.
 
-| Переменная           | Описание                                   | Пример                         |
-|----------------------|---------------------------------------------|-------------------------------|
-| TELEGRAM_API_ID      | API ID Telegram                             | 123456                        |
-| TELEGRAM_API_HASH    | API Hash Telegram                           | abcdef0123456789abcdef0123    |
-| TELEGRAM_SESSION_NAME| Имя сессии Telethon                         | monitor_session               |
-| KEYWORDS             | Список ключевых слов (через запятую)        | crypto,project,launch         |
+| Переменная           | Описание                                     | Пример                        |
+|----------------------|--------------------------------------------- |-------------------------------|
+| TELEGRAM_API_ID      | API ID Telegram                              | 123456                        |
+| TELEGRAM_API_HASH    | API Hash Telegram                            | abcdef0123456789abcdef0123    |
+| TELEGRAM_SESSION_NAME| Имя сессии Telethon                          | monitor_session               |
+| KEYWORDS             | Список ключевых слов (через запятую)         | crypto,project,launch         |
 | TARGET_CHANNEL_IDS   | Целевые каналы для публикации (через запятую)| -1001234,-1005678             |
 
 Пример .env.example:
@@ -234,8 +231,6 @@ TARGET_CHANNEL_IDS=-1001234567890
 - **Чистая лента совпадений:** docs/screenshots/clean_feed.png
 - **Пример настройки .env:** docs/screenshots/env_example.png
 
-> Добавьте сюда реальные изображения после первого запуска системы.
-
 ---
 
 ## Пример точки входа (main.py)
@@ -291,8 +286,6 @@ if __name__ == "__main__":
 - **Platform:** Python 3.11+ • Telethon • Heroku-ready
 - **License:** MIT
 - **Status:** Active development
-
-> Replace this text block with image badges (Shields) and a logo in docs/banner.png if needed.
 
 ---
 
@@ -387,7 +380,7 @@ Private target channels / Logs / Export
 > Variables are loaded from .env via python-dotenv and exposed in config/settings.py.
 
 | Variable             | Description                                  | Example                       |
-|---------------------|----------------------------------------------|-------------------------------|
+|---------------------|---------------------------------------------- |-------------------------------|
 | TELEGRAM_API_ID     | Telegram API ID                               | 123456                        |
 | TELEGRAM_API_HASH   | Telegram API Hash                             | abcdef0123456789abcdef0123    |
 | TELEGRAM_SESSION_NAME| Telethon session name                        | monitor_session               |
