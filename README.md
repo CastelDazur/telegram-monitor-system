@@ -241,7 +241,11 @@ from app.monitor import run
 if __name__ == "__main__":
     run()
 ```
-
+## 📬 Контакты
+- **LinkedIn:** [Dmytro Romanov](https://www.linkedin.com/in/casteldazur/)
+- **GitHub:** [CastleDazur](https://github.com/CastleDazur)
+- **Email:** castledazur@gmail.com
+- **TG:** https://t.me/casteldazur
 ---
 
 # English
@@ -477,3 +481,10 @@ TARGET_CHANNEL_IDS=-1001234567890
 
 - **Clean matches feed:** docs/screenshots/clean_feed.png
 - **.env setup example:** docs/screenshots/env_example.png
+
+
+## 📬 Contacts
+- **LinkedIn:** [Dmytro Romanov](https://www.linkedin.com/in/casteldazur/)
+- **GitHub:** [CastleDazur](https://github.com/CastleDazur)
+- **Email:** castledazur@gmail.com
+- **TG:** https://t.me/casteldazur
